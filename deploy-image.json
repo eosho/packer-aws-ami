@@ -4,7 +4,7 @@
             "type": "amazon-ebs",
             "region": "eu-west-1",
             "instance_type": "t2.micro",
-            "ami_name": "Bamboo Server 6.1 {{timestamp}}",
+            "ami_name": "Windows_Server-2012-R2_RTM-$PROGRAM_NAME {{timestamp}}",
             "user_data_file": "./scripts/SetUpWinRM.ps1",
             "communicator": "winrm",
             "winrm_username": "Administrator",
@@ -25,8 +25,7 @@
             "scripts": [
                 "./scripts/EC2Config.ps1",
                 "./scripts/BundleConfig.ps1",
-                "./scripts/SetUpDevTools.ps1",
-                "./scripts/InstallBambooServer.ps1"
+                "./scripts/SetUpDevTools.ps1"
             ]
         },
         {
